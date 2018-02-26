@@ -13,9 +13,10 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
+    function innerFunction(value){
+       return value > base;
+}
+return innerFunction;
     
     // YOUR CODE ABOVE HERE //
 }
@@ -27,7 +28,10 @@ function createGreaterThanFilter(base) {
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+    function innerFunction(value){
+       return value < base;
+}
+return innerFunction;
     
     
     
@@ -35,13 +39,16 @@ function createLessThanFilter(base) {
 }
 
 /** 
- * Given a startsWith character, which will be a single character, return a 
- * Function that tests whether a given String starts with the startsWith 
- * character.
+ * Given a startsWith character, which will be a single character, 
+ * return a Function 
+ * that tests whether a given String starts with the startsWith character.
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
+function newFunction(String){
+       return startsWith.charAt(0).toLowerCase() === String.charAt(0).toLowerCase();
+}
+ return newFunction;   
     
     
     
@@ -49,13 +56,17 @@ function createStartsWithFilter(startsWith) {
 }
 
 /** 
- * Given a endsWith character, which will be a single character, return a 
- * Function that tests whether a given String ends with the endsWith 
- * character.
+ * Given a endsWith character, which will be a single character, 
+ * return a Function that tests 
+ * whether a given String ends 
+ * with the endsWith character.
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
+function newFunctionz(String){
+      return endsWith.toLowerCase() === String.charAt(String.length-1).toLowerCase();
+}
+ return newFunctionz;       
     
     
     
@@ -71,7 +82,15 @@ function createEndsWithFilter(endsWith) {
  */
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
+function modify(modify)
+{
+    for (var i = 0; i < strings[strings.length]; i++)
+    return modify(strings[i].toUpperCase);
+}
+modifyStrings();
+
+
+
     
     
     

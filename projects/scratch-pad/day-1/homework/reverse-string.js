@@ -21,7 +21,8 @@
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    
+  var newString = input.split('').reverse().join('');
+  return newString;
     
     
     
